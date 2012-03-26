@@ -1,4 +1,4 @@
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=calvinfroedge&url=http://github.com/calvinfroedge/codeigniter-payments&title=Codeigniter Payments&language=en_GB&tags=github&category=software) 
+## This code has taken tons of work.  Donations highly appreciated.  [Make a Donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TJMWX5E9GXS7S "Make a Donation to Codeigniter Payments")
 
 # Codeigniter Payments
 
@@ -39,7 +39,7 @@ $this->load->spark('codeigniter-payments/[version #]/');
 
 2.  By default, test api endpoints will be used.  To enable production endpoints, change the mode in /config/payments.php from 'test' to 'production'.  Note that if you are a Psigate customer, you must obtain your production endpoint from Psigate support.
 
-3.  When you load gateways, th
+3.  When you load gateways, the config can either be passed in the constructor or loaded from a config file.
 
 ## Gateway Support
 
@@ -64,8 +64,8 @@ $config = array(
 If you don't pass config in an array, and don't create a config file, the config in src/php-payments/config/drivers will be used - which is only for testing and is probably not what you want.
 
 ## Making Requests
-
-Examples for all gateways are available in /examples.  A request is formatted thusly:
+ 
+A request is formatted thusly:
 
 ```php
 $this->payments->payment_action('gateway_name', $params, $config);
